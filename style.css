@@ -86,6 +86,10 @@ a {
     background-size: contain;
 }
 
+.blocks {
+	margin: 20px auto;
+}
+
 .blocks .title {
     font-weight: 300;
     font-size: 48px;
@@ -106,8 +110,7 @@ a {
 }
 
 .news .newsDetails {
-    margin: 5px;
-    
+    margin: 10px 5px;
 }
 
 .news .newsTitle {
