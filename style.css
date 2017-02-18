@@ -1,9 +1,15 @@
 
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
+@font-face {
+	font-family: 'SourceHanSans';
+	src: url(../Content/font/SourceHanSansSC-Light.otf) format('truetype');
+}
+
 body {
     font: "roboto";
-    font-family: "roboto" , "source-han-sans-japanese";
+    font-family: "roboto" , 'SourceHanSans';
+	font-weight: 100;
     font-size: 100%;
     font-weight: normal;
     margin: 0px;
@@ -14,6 +20,10 @@ body {
 
 a {
     text-decoration: none;
+}
+
+img {
+	vertical-align: bottom;
 }
 
 .sitelogo {
@@ -29,6 +39,8 @@ a {
 }
 
 .nav {
+	font-weight: bold;
+	background-color: #fff;
     padding: 10px 0px;
     position: fixed;
     left: 0;
@@ -38,7 +50,13 @@ a {
 }
 
 .nav-hideIcon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	
     color: #fff;
+	background-color: transparent;
     padding: 20px 0px;
     box-shadow: none;
 }
@@ -48,6 +66,7 @@ a {
 }
 
 .nav ul {
+	padding: 0px;
     margin: 0px auto;
     text-align: center;
     font-size: 100%;
@@ -248,6 +267,50 @@ a {
 
 .schedule .scheduleType-radio {
 	background-color: #f4af91;
+}
+
+.profile .items {
+	padding: 30px;
+}
+
+.profile .photo {
+	max-width: 380px;
+}
+
+.profile .profileItem{
+	display: inline-block;
+}
+
+.profile .profileDetails {
+	padding: 0px 30px;
+	width: 50%;
+	height: 100%;
+	
+	font-size: 90%;
+	vertical-align: top;
+
+}
+
+.profile .name .normal {
+	letter-spacing: 0.5em;
+	font-size: 500%;
+}
+
+.profile .name .english {
+	letter-spacing: 0.5em;
+	font-size: 130%;
+}
+
+.profile .detailInfo {
+	margin: 20px 0px;
+}
+
+.profile .description{
+	line-height: 1.7;
+}
+
+.profile .infoItem {
+	padding: 10px 0px;
 }
 
 .type-media {
