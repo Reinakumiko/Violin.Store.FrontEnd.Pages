@@ -313,6 +313,37 @@ img {
 	padding: 10px 0px;
 }
 
+.discography .items {
+	margin: 30px auto;
+	padding: 30px;
+	font-size: 70%;
+}
+
+.discography .items .title{
+	margin-top: 0px;
+	font-size: 230%;
+}
+
+.discography .discoItem {
+	display: inline-block;
+}
+
+.discography .infoItem {
+	margin: 10px;
+}
+
+.discography .image {
+	vertical-align: top;
+}
+
+.discography .subtitle {
+	font-size: 130%;
+}
+
+.discography .discoSubtitle {
+	margin: 0px 10px;
+}
+
 .type-media {
     background-color: #91f4bb;
 }
