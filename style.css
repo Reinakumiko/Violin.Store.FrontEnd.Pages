@@ -365,6 +365,10 @@ img {
 	display: inline-block;
 }
 
+.discography .info{
+	width: 65%;
+}
+
 .discography .infoItem {
 	margin: 10px;
 }
