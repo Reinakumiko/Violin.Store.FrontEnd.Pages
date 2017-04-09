@@ -40,13 +40,13 @@ img {
 
 .nav {
 	font-weight: bold;
-	background-color: #fff;
     padding: 10px 0px;
     position: fixed;
     left: 0;
     right: 0;
     box-shadow: 0px 1px 0px rgba(0,0,0,0.5);
     z-index: 1000;
+	background-color: #fff;
 }
 
 .nav-hideIcon {
@@ -66,8 +66,8 @@ img {
 }
 
 .nav ul {
-	padding: 0px;
     margin: 0px auto;
+	padding: 0px;
     text-align: center;
     font-size: 100%;
     max-width: 960px;
@@ -80,7 +80,7 @@ img {
     list-style: none;
 }
 
-.nav > ul > li > a {
+.nav > ul > li a {
     display: block;
     color: #000;
     opacity: .8;    
@@ -88,12 +88,49 @@ img {
     text-decoration: none;
 }
 
-.nav > ul > li > a:hover {
+.nav > ul > li a:hover {
     opacity: 1;
 }
 
-.nav-hideIcon > ul > li > a {
+.nav-hideIcon > ul > li a {
     color: #fff;
+}
+
+
+.memberMenu {
+    position: relative;
+}
+
+.memberMenu .menuPanel {
+    left: -20px;
+    text-align: left;
+    position: absolute;
+    background-color:  white;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-top: none;
+    display: none;
+}
+
+.nav-hideIcon .menuPanel {
+    background-color: transparent;
+    boorder: none;
+}
+
+.memberMenu:hover .menuPanel {
+    display: block;
+}
+
+.menuPanel ul,
+.menuPanel li {
+    padding: 0px;
+    margin: 0px;
+}
+
+.menuPanel li {
+    font-size: 90%;
+    padding: 0px 10px;
+    margin: 10px 0px;
+    display: block;
 }
 
 .mainvisual{
@@ -344,6 +381,96 @@ img {
 	margin: 0px 10px;
 }
 
+.productBlocks .productItem {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 5px;
+}
+
+.productItem:hover {
+    box-shadow: 0 0 2px 2px #ddd;
+}
+
+.productItem .productTitle {
+    font-size: 90%
+}
+
+.productItem .productPrice { 
+    color: coral;
+    font-size: 110%;
+}
+
+.productInfo {
+    padding-left: 5%;
+}
+
+.productInfo .baseProductInfo{
+    margin: auto;
+}
+
+.productInfo .detailPreview{
+    float: left;
+    vertical-align: top;
+    width: 300px;
+    text-align: center;
+}
+
+.productInfo .detailPreview img {
+    margin: auto;
+}
+
+.productInfo .description {
+    padding-top: 40px;
+    margin-left: 15px;
+}
+
+.productInfo .detailPrice {
+    color: coral;
+    font-size: 110%;
+    
+    margin-bottom: 30px;
+}
+
+.productInfo .buyControl {
+    margin-top: 40px;
+}
+
+.productInfo .controlItem{
+    display: inline-block;
+}
+
+.productInfo .buyNumber input {
+    font-size: 110%;
+    width: 50px;
+    outline: none;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.productInfo .buyBuyButton .buyButton {
+    color: #fff;
+    border: none;
+    background: none;
+    outline: none;
+    background-color: #c40000;
+    border: 1px solid #c40000;
+    height: 35px;
+    width: 130px;
+}
+
+.productInfo .buyProductDescription{
+    clear: both;
+    padding: 20px;
+}
+
+.buyProductDescription .descriptionTitle {
+    font-size: 130%;
+}
+
+.buyProductDescription .descriptionContent{
+    padding: 20px 40px;
+}
+
 .type-media {
     background-color: #91f4bb;
-}
+} 
