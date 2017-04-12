@@ -95,8 +95,6 @@ img {
 .nav-hideIcon > ul > li a {
     color: #fff;
 }
-
-
 .memberMenu {
     position: relative;
 }
@@ -105,19 +103,30 @@ img {
     left: -20px;
     text-align: left;
     position: absolute;
+    transition: .6s;
+    height: 0px;
+    overflow: hidden;
     background-color:  white;
-    border: 1px solid rgba(0,0,0,0.5);
-    border-top: none;
-    display: none;
 }
 
 .nav-hideIcon .menuPanel {
     background-color: transparent;
-    boorder: none;
+    border: none;
 }
 
 .memberMenu:hover .menuPanel {
-    display: block;
+    height: 90px;
+}
+
+.memberMenu .menuOptions{
+    margin-top: 16px;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-top: none;
+}
+
+.nav-hideIcon .memberMenu .menuOptions {
+    border: none;
+    margin: 0px;
 }
 
 .menuPanel ul,
@@ -128,8 +137,7 @@ img {
 
 .menuPanel li {
     font-size: 90%;
-    padding: 0px 10px;
-    margin: 10px 0px;
+    padding: 5px 10px;
     display: block;
 }
 
@@ -383,6 +391,18 @@ img {
 
 .discography .discoSubtitle {
 	margin: 0px 10px;
+}
+
+.productBlocks .blockTitle {
+	font-size: 150%;
+	font-weight: bold;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.productBlocks .blockProductList{
+	padding: 20px 40px;
 }
 
 .productBlocks .productItem {
