@@ -393,14 +393,6 @@ img {
 	margin: 0px 10px;
 }
 
-.productBlocks .blockTitle {
-	font-size: 150%;
-	font-weight: bold;
-	padding: 10px;
-	margin-bottom: 10px;
-	border-bottom: 1px solid #ccc;
-}
-
 .productBlocks .blockProductList{
 	padding: 20px 40px;
 }
@@ -482,6 +474,10 @@ img {
     width: 130px;
 }
 
+.productInfo .buyBuyButton .buyButton:hover {
+	background: #E64646;
+}
+
 .productInfo .buyProductDescription{
     clear: both;
     padding: 20px;
@@ -493,6 +489,41 @@ img {
 
 .buyProductDescription .descriptionContent{
     padding: 20px 40px;
+}
+
+.messageBox{
+	margin: 10px auto;
+	padding: 10px;
+	width: 500px;
+	min-height: 200px;
+	border: 1px solid #999;
+	border-radius: 3px;
+	box-shadow: 0px 0px 3px 0px #aaa;
+}
+
+.messageBox .messageTitle{
+	font-size: 130%;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+.messageBox .messageBody {
+	margin: 10% 0px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.subBlocks .blockTitle {
+	font-size: 150%;
+	font-weight: bold;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.subBlocks .blockBody {
+	
 }
 
 .type-media {
